@@ -67,9 +67,36 @@ while isGame:
 
     rand = random.randint(1,6)
 
+    enemy =[]
+    "Name":"Адвокат"
+    "damage":15,
+    "hp":40
+    "armor":4
+
+    
     print("Выпало" , rand)
 
-    if rand == 2:
+    enemyName ="Жив Цел Орёл"
+    enemyName1 ="Ниппон Газаува"
+    enemyName2 ="Я Пушистый я Смелей"
+    enemyName3 ="Копротошка"
+    enemyName4 ="Члензилло"
+
+    massEnemies = ["Жив Цел Орёл", "Ниппон Газаува", "Я Пушистый я Смелей", "Копротошка", "Члензилло"]
+    print(massEnemies[0])
+    print(len(massEnemies))
+    print(massEnemies[len(massEnemies)-1])
+
+    massEnemies.append(123)
+    print(massEnemies)
+    massEnemies.remove
+    print(massEnemies)
+    massEnemies.copy
+    print(massEnemies)
+    massEnemies.pop(0)
+    print(massEnemies)
+
+if rand == 2:
         hpEnemy = 100
         damageEnemy = 75
         while True:
@@ -91,12 +118,11 @@ while isGame:
                 print("ПОБЕДА!!")
                 break
                 
-    if hp <= 0:
+if hp <= 0:
         print("Остаток Здоровья:" , hp)
         print("WASTED!")
-        isGame = False
-        break       
-    time.sleep(0.5)
+        isGame = Falsebreak       
+time.sleep(0.5)
 
 
 print("Конец Игры!")
